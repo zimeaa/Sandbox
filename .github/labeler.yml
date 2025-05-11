@@ -26,4 +26,5 @@
 # Labels for GitHub workflows
 ".github/workflows/**/*": ci
 
+# Default label for any other files
 "*": misc
