@@ -25,3 +25,5 @@
 
 # Labels for GitHub workflows
 ".github/workflows/**/*": ci
+
+"*": misc
