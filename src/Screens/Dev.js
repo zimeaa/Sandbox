@@ -31,9 +31,9 @@ const Dev = () => {
   const [showText, setShowText] = useState(false);
   const [isConnected, setIsConnected] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [sseUpdates, setSseUpdates] = useState([]);
+  const [setSseUpdates] = useState([]);
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
-  const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+  const [edges, onEdgesChange] = useEdgesState(initialEdges);
 
   const handleClick = async () => {
     console.log('Button clicked! Dispatching action...');
