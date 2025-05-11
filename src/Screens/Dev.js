@@ -131,7 +131,7 @@ const Dev = () => {
       <Box sx={{ flex: 1, padding: 3 }}>
         <TitleCard
           title="Sandbox WIP"
-          description="Tracer with OpenTelemetry and Jaeger"
+          description="Tracer with OpenTelemetry and Jaeger. Testing App."
         />
         <Box sx={{ display: 'flex', justifyContent: 'space-around', mt: 5 }}>
           <Button
