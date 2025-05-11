@@ -1,0 +1,27 @@
+# .github/labeler.yml
+
+# Labels for screens
+"Screens/**/*": screen
+
+# Labels for backend-related files
+"src/redux/**/*": backend
+"src/hooks/**/*": backend
+
+# Labels for components
+"src/Components/**/*": component
+
+# Labels for styles
+"src/**/*.css": styles
+
+# Labels for images and assets
+"src/images/**/*": assets
+"public/**/*": assets
+
+# Labels for documentation
+"**/*.md": documentation
+
+# Labels for tests
+"**/tests/**/*": tests
+
+# Labels for GitHub workflows
+".github/workflows/**/*": ci
