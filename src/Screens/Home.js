@@ -7,7 +7,7 @@ function Home(props) {
     <>
       <TitleCard 
         title="Tracer Flow" 
-        description="Visualize the flow of trace-ids through your system. This is a simple example of how to use React Flow to create a tracer flow diagram. You can customize the nodes and edges to fit your needs."
+        description="Visualize the flow of trace-ids through your system. This is a simple example of how to use React Flow to create a tracer flow diagram."
         />
     <TracerFlow/>
     </>
