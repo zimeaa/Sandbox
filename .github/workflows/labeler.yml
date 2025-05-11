@@ -1,22 +1,27 @@
-# This workflow will triage pull requests and apply a label based on the
-# paths that are modified in the pull request.
-#
-# To use this workflow, you will need to set up a .github/labeler.yml
-# file with configuration.  For more information, see:
-# https://github.com/actions/labeler
+# .github/labeler.yml
 
-name: Labeler
-on: [pull_request_target]
+# Labels for screens
+"Screens/**/*": screen
 
-jobs:
-  label:
+# Labels for backend-related files
+"src/redux/**/*": backend
+"src/hooks/**/*": backend
 
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
+# Labels for components
+"src/Components/**/*": component
 
-    steps:
-    - uses: actions/labeler@v4
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+# Labels for styles
+"src/**/*.css": styles
+
+# Labels for images and assets
+"src/images/**/*": assets
+"public/**/*": assets
+
+# Labels for documentation
+"**/*.md": documentation
+
+# Labels for tests
+"**/tests/**/*": tests
+
+# Labels for GitHub workflows
+".github/workflows/**/*": ci
