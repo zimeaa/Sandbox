@@ -31,7 +31,7 @@ const Dev = () => {
   const [showText, setShowText] = useState(false);
   const [isConnected, setIsConnected] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [setSseUpdates] = useState([]);
+  const [sseUpdates, setSseUpdates] = useState([]);
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, onEdgesChange] = useEdgesState(initialEdges);
 
@@ -94,7 +94,7 @@ const Dev = () => {
       eventSource.close();
       console.log('SSE connection closed');
     };
-  }, [dispatch]);
+  }, [dispatch, setSseUpdates, setNodes]);
 
   return (
     <Box sx={{ display: 'flex', height: '100vh' }}>
